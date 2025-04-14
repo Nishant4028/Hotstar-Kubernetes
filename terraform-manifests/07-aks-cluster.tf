@@ -52,13 +52,16 @@ windows_profile {
   admin_password            = var.windows_admin_password
 }
 
-# Linux Profile
+
+
 linux_profile {
   admin_username = "ubuntu"
   ssh_key {
-      key_data = file(var.ssh_public_key)
+      key_data = var.ssh_public_key
   }
 }
+
+
 
 # Network Profile
 network_profile {
