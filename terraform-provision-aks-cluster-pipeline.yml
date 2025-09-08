@@ -65,6 +65,11 @@ stages:
                 name: sshkey
                 inputs:
                   secureFile: 'aks-terraform-devops-ssh-key-ububtu.pub'
+              - task: TerraformInstaller@1
+                displayName: 'install terraform in deployment stage'
+                inputs:
+                  terraformVersion: 'latest'
+              
               - task: TerraformTaskV4@4
                 displayName: Terraform Init
                 inputs:
