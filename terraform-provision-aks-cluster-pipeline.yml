@@ -54,7 +54,7 @@ stages:
         pool:
           name: NishantAgent
           demands:
-          - agent.name -equals myagent
+          - agent.name -equals nishanagent1
         environment: $(DEV_ENVIRONMENT)
         strategy:
          runOnce:
