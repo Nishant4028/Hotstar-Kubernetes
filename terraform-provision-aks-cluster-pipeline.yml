@@ -4,7 +4,7 @@ trigger:
 pool:
   name: NishantAgent
   demands:
-  - agent.name -equals myagent
+  - agent.name -equals nishanagent1
 
           
 variables:
