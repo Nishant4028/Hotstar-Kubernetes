@@ -35,7 +35,7 @@ stages:
               command: 'init'
               workingDirectory: '$(System.DefaultWorkingDirectory)/terraform-manifests'
               commandOptions: '-reconfigure'
-              backendServiceArm: 'azuredeops-to-cloud'
+              backendServiceArm: 'azuredeops-to-cloud2'
               backendAzureRmResourceGroupName: 'rg1'
               backendAzureRmStorageAccountName: 'nishant12311'
               backendAzureRmContainerName: 'tfstatefiles'
@@ -77,7 +77,7 @@ stages:
                   command: 'init'
                   workingDirectory: '$(Pipeline.Workspace)/terraform-manifests-out'
                   commandOptions: '-reconfigure'
-                  backendServiceArm: 'azuredeops-to-cloud'
+                  backendServiceArm: 'azuredeops-to-cloud2'
                   backendAzureRmResourceGroupName: 'rg1'
                   backendAzureRmStorageAccountName: 'nishant12311'
                   backendAzureRmContainerName: 'tfstatefiles'
@@ -90,7 +90,7 @@ stages:
                   command: 'plan'
                   workingDirectory: '$(Pipeline.Workspace)/terraform-manifests-out'
                   commandOptions: '-var ssh_public_key=$(sshkey.secureFilePath) -var environment=$(DEV_ENVIRONMENT) -out $(Pipeline.Workspace)/terraform-manifests-out/$(DEV_ENVIRONMENT)-$(Build.BuildId).out'
-                  environmentServiceNameAzureRM: 'azuredeops-to-cloud'
+                  environmentServiceNameAzureRM: 'azuredeops-to-cloud2'
                 
               - task: TerraformTaskV4@4
                 inputs:
@@ -98,5 +98,5 @@ stages:
                   command: 'apply'
                   workingDirectory: '$(Pipeline.Workspace)/terraform-manifests-out'
                   commandOptions: '$(Pipeline.Workspace)/terraform-manifests-out/$(DEV_ENVIRONMENT)-$(Build.BuildId).out'
-                  environmentServiceNameAzureRM: 'azuredeops-to-cloud'
+                  environmentServiceNameAzureRM: 'azuredeops-to-cloud2'
               
