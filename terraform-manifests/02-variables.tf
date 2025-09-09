@@ -3,7 +3,7 @@
 variable "location" {
   type = string
   description = "Azure Region where all these resources will be provisioned"
-  default = "East US2"
+  default = "Eastus2"
 }
 
 # Azure Resource Group Name
@@ -24,8 +24,7 @@ variable "environment" {
 # AKS Input Variables
 
 # SSH Public Key for Linux VMs
-variable "ssh_public_key" { 
-  type= string
+variable "ssh_public_key" {
   description = "This variable defines the SSH Public Key for Linux k8s Worker nodes"  
 }
 
@@ -42,4 +41,3 @@ variable "windows_admin_password" {
   default = "Azureuser@1234567"
   description = "This variable defines the Windows admin password k8s Worker nodes"  
 }
-
