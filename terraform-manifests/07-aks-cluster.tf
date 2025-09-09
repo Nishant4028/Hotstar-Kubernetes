@@ -7,13 +7,12 @@ resource "azurerm_kubernetes_cluster" "aks_cluster" {
   node_resource_group = "${azurerm_resource_group.aks_rg.name}-nrg"
 
 
-
   default_node_pool {
     name       = "systempool"
     vm_size    = "Standard_D2s_v3"
     orchestrator_version = data.azurerm_kubernetes_service_versions.current.latest_version
     
-    # zones = [1, 3]
+    zones = [2]
     auto_scaling_enabled = true 
     max_count            = 3
     min_count            = 1
@@ -53,16 +52,13 @@ windows_profile {
   admin_password            = var.windows_admin_password
 }
 
-
-
+# Linux Profile
 linux_profile {
   admin_username = "ubuntu"
   ssh_key {
-      key_data = var.ssh_public_key
+      key_data = file(var.ssh_public_key)
   }
 }
-
-
 
 # Network Profile
 network_profile {
