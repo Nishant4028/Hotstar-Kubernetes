@@ -10,7 +10,7 @@ resource "azurerm_kubernetes_cluster" "aks_cluster" {
 
   default_node_pool {
     name       = "systempool"
-    vm_size    = "Standard_DS2_v2"
+    vm_size    = "Standard_D2s_v3"
     orchestrator_version = data.azurerm_kubernetes_service_versions.current.latest_version
     
     # zones = [1, 3]
