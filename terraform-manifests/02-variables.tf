@@ -24,7 +24,8 @@ variable "environment" {
 # AKS Input Variables
 
 # SSH Public Key for Linux VMs
-variable "ssh_public_key" {
+variable "ssh_public_key" { 
+  type= string
   description = "This variable defines the SSH Public Key for Linux k8s Worker nodes"  
 }
 
