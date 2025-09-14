@@ -1,5 +1,7 @@
 trigger:
-- main
+- paths:
+    include:
+      - terraform-manifests/*
 
 pool:
   name: NishantAgent
