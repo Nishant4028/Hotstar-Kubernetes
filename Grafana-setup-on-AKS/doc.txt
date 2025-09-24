@@ -1,0 +1,33 @@
+Promethus Grafana Setup:
+
+kubectl create namespace monitoring  
+helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
+helm repo list 
+
+helm install prometheus prometheus-community/kube-prometheus-stack -n monitoring 
+
+create the ingress for this grafana >> grafana-ingress.yml
+
+kubectl get secret -n monitoring prometheus prometheus-grafana -o=jsonpath='{.data.admin-password}' |base64 -d
+
+use the above username password to login in grafana dashboard
+
+to create and get AKS data create the service principle 
+
+az ad sp create-for-rbac --role="Monitoring Reader" --scope="/subscriptions/<subcription-id>/resourceGroups/terraform-aks-dev"
+
+output like 
+{
+  "appId": "9828xxxxxxxxxxxxxxxxxxxxx",
+  "displayName": "azure-cli-yyyyyyyyyyyyyyyyyyy",
+  "password": "..V8Q~Gahx3QO_PtlEBKx2SSMczzzzzzzzzzzzzzzzz",
+  "tenant": "4a34bdd0-7741-4938-853b-2232qqqqqqqqqqqqqqqqqqqq"
+}
+
+enable insights in aks cluster
+go to cluster> monitoring> insights> in monitor change to  "Enable Managed Prometheus visualizations (Recommended)"
+
+add data source in grafana dashboard:
+name > azure monitor > give the above service connection details 
+
+import dashboard> number> 10956
