@@ -33,7 +33,7 @@
 Explore the code and contribute to the project:  
 [![GitHub Repo]((https://github.com/Nishant4028/Hotstar-Kubernetes.git))
 
+<img width="1393" height="681" alt="Screenshot 2025-09-25 072856" src="https://github.com/user-attachments/assets/4aade6aa-b488-4488-955a-ec9ef9d45626" />
 
-=======
-# Hotstar-Kubernetes
->>>>>>> c48baa9 (Initial commit)
+<img width="569" height="308" alt="image" src="https://github.com/user-attachments/assets/1583d817-ad3e-451f-b0c5-7311dba02e34" />
+
