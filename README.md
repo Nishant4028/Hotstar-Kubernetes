@@ -47,6 +47,9 @@ Explore the code and contribute to the project:
 
 <img width="1851" height="929" alt="Screenshot 2025-09-25 075013" src="https://github.com/user-attachments/assets/5e5676ba-1930-4963-8505-0cf147cf2412" />
 
+<img width="901" height="407" alt="image" src="https://github.com/user-attachments/assets/5e721925-1617-4631-8404-917032b8dce9" />
+
+
 
 
 
