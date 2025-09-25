@@ -37,3 +37,17 @@ Explore the code and contribute to the project:
 
 <img width="569" height="308" alt="image" src="https://github.com/user-attachments/assets/1583d817-ad3e-451f-b0c5-7311dba02e34" />
 
+<img width="1864" height="969" alt="Screenshot 2025-09-25 072451" src="https://github.com/user-attachments/assets/369ea433-50d9-4f8d-97ff-071fa7097f26" />
+
+<img width="1913" height="956" alt="Screenshot 2025-09-25 074923" src="https://github.com/user-attachments/assets/e073a0a8-c467-4a5d-990b-526c77e08f4a" />
+
+<img width="1851" height="894" alt="Screenshot 2025-09-25 075411" src="https://github.com/user-attachments/assets/a129ddf8-8f5b-42d2-aa34-6334b2124fdf" />
+
+<img width="1829" height="896" alt="Screenshot 2025-09-25 075203" src="https://github.com/user-attachments/assets/5843ffe8-2110-4f72-9f8c-1fba7f826140" />
+
+<img width="1851" height="929" alt="Screenshot 2025-09-25 075013" src="https://github.com/user-attachments/assets/5e5676ba-1930-4963-8505-0cf147cf2412" />
+
+
+
+
+
