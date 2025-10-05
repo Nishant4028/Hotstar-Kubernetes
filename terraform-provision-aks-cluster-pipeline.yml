@@ -54,9 +54,9 @@ stages:
       - deployment: DeployDevAKSCluster
         displayName: DeployDevAKSCluster
         pool:
-          name: NishantAgent
+          name: az-devagent
           demands:
-          - agent.name -equals nishanagent1
+            - agent.name -equals az-agent1
         environment: $(DEV_ENVIRONMENT)
         strategy:
          runOnce:
